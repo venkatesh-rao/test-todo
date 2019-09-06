@@ -1,19 +1,28 @@
-.btn.disabled, .btn:disabled {
-    cursor: not-allowed;
+.btn {
+  outline: none !important;
 }
 
-.btn-light.disabled, .btn-light:disabled {
-    background: inherit;
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+.btn-light.disabled,
+.btn-light:disabled {
+  background: inherit;
+}
+
+.btn-dark:hover {
+  background-color: none;
+  border-color: none;
 }
 
 .todo-list {
-    padding-left:85px;
-    margin-top: 10px;   
+  padding-left: 85px;
+  margin-top: 10px;
 }
 
-
 @media only screen and (max-width: 450px) {
-    .todo-list {
-        padding-left: 7px;
-    }
+  .todo-list {
+    padding-left: 7px;
+  }
 }

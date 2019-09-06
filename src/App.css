@@ -1,10 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Handlee&display=swap");
+
 .App {
   text-align: center;
   height: 100vh;
+  padding: 25px 0px;
 }
 
 body {
-  background: #ECECEC;
+  background: #ececec;
+  font-family: "Handlee", cursive !important;
 }
 
 .App-link {
@@ -14,15 +18,17 @@ body {
 .todo {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .todo-text {
   width: 30vw;
+  border-radius: 50px;
   text-align: left;
 }
 
 .icon-btn {
-  border:0;
+  border: 0;
   padding: 0;
   background: inherit;
   margin-right: 10px;
@@ -30,7 +36,7 @@ body {
 
 .icon-btn :active :focus :hover {
   box-shadow: 0;
-  background-color: 'none';
+  background-color: "none";
 }
 
 @media only screen and (max-width: 600px) and (min-width: 400px) {

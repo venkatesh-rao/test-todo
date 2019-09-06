@@ -1,21 +1,36 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SocialMedia = () => {
-    return (
-        <div style={{ marginTop: 10 }}>
-            <span style={{ paddingRight: 10 }}>
-                <a href="https://www.linkedin.com/in/kannan-balasubramanian-93376a28/" style={{ color: 'black' }} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={['fab', 'linkedin-in']} size="2x" />
-                </a>
-            </span>
-            <span>
-                <a href="https://twitter.com/rbkannan1" style={{ color: 'black' }} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={['fab', 'twitter']} size="2x" />
-                </a>
-            </span>
-        </div>
-    );
-}
+  return (
+    <div
+      style={{
+        position: "absolute",
+        bottom: 10,
+        right: 10,
+        width: "fit-content",
+        margin: "0px auto",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+        textAlign: "center"
+      }}
+    >
+      <span>
+        <a
+          href="https://twitter.com/venkatvr_rao"
+          style={{ color: "black", display: "flex", alignItems: "center" }}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={["fab", "twitter"]} size="1x" />
+          <span style={{ marginLeft: 5, letterSpacing: 1, fontSize: 12 }}>
+            {"@venkatvr_rao"}
+          </span>
+        </a>
+      </span>
+    </div>
+  );
+};
 
 export default SocialMedia;
